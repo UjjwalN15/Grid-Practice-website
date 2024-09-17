@@ -1,0 +1,156 @@
+/* Utility CSS starts */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+body {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.row2 {
+    grid-row: span 2;
+}
+
+.row3 {
+    grid-row: span 3;
+}
+
+.col3 {
+    grid-column: span 3;
+}
+
+.col2 {
+    grid-column: span 2;
+}
+
+/* utility CSS ends */
+
+/* Container starts here */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, green, yellowgreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container ends here */
+
+/* Text-box starts here */
+.text-box {
+    flex-basis: 35%;
+    text-align: center;
+    color: white;
+}
+.text-box>button{
+    background-color: black;
+    margin-top: 10px;
+}
+.text-box>button>a{
+    color: pink;
+    padding: 5px;
+    font-size: 1rem;
+}
+.text-box>button>a:hover{
+    color: white;
+    text-decoration: underline;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+/* Text-box ends here */
+
+/* Grid Image box starts here */
+.grid-image-box {
+    flex-basis: 60%;
+    height: 80%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.box {
+    background-color: black;
+    cursor: pointer;
+    background-blend-mode:hard-light;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+    background-color: white; 
+}
+/* Grid Image box ends here */
+
+/* Box styling */
+#box1 {
+    background-image: url(https://wallpapers.com/images/featured/hdb30wtkjbn08xlf.jpg);
+    background-position: top;
+}
+
+#box2 {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.yLf7kQVaLpxqCZX1VRHw-wHaEK&pid=Api&P=0&h=220);
+    background-position: top;
+}
+
+#box3 {
+    background-image: url(https://wallpaperaccess.com/full/83923.jpg);
+    background-position: top;
+}
+
+#box4 {
+    background-image: url(https://wallpapercave.com/wp/wp2665214.jpg);
+    background-position: top;
+}
+
+#box5 {
+    background-image: url(https://www.hdwallpapers.in/download/landscape_of_mountain_green_hills_under_cloudy_blue_sky_4k_hd_nature-HD.jpg);
+    background-position: top;
+}
+
+#box6 {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/013/951/373/large_2x/awesome-nature-landscape-beautiful-scene-with-high-tatra-mountain-peaks-stones-in-mountain-lake-calm-lake-water-reflection-colorful-sunset-sky-amazing-nature-background-autumn-adventure-hiking-photo.jpg);
+    background-position: top;
+}
+#box7{
+    background-image: url(https://getwallpapers.com/wallpaper/full/a/8/6/618432.jpg);
+    background-position: top;
+}
+#box1:hover,#box2:hover,#box3:hover,#box4:hover,#box5:hover,#box6:hover,#box7:hover{
+    background-color: white;
+    background-position: center;
+    transition: all 1s ease-in-out;
+    box-shadow: 5px 2px 2px white;
+}
+
+/* Box styling ends */
